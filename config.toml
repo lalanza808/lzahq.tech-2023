@@ -1,18 +1,29 @@
 base_url = "https://lzahq.tech"
+title = "lzahq"
 compile_sass = false
 build_search_index = true
 theme = "DeepThought"
+minify_html = true
+ignored_content = []
+taxonomies = [
+    { name = "categories", feed = true, paginate_by = 10 },
+    { name = "tags", fees = true, paginate_by = 10 },
+]
+
 [markdown]
 highlight_code = true
+highlight_theme = "one-dark"
+
 [extra]
+mermaid.enabled = true
 navbar_items = [
  { code = "en", nav_items = [
   { url = "$BASE_URL/", name = "Home" },
   { url = "$BASE_URL/posts", name = "Posts" },
-  { url = "$BASE_URL/docs", name = "Docs" },
+  { url = "$BASE_URL/projects", name = "Projects" },
   { url = "$BASE_URL/tags", name = "Tags" },
   { url = "$BASE_URL/categories", name = "Categories" },
- ]},
+ ]}
 ]
 
 # Add links to favicon, you can use https://realfavicongenerator.net/ to generate favicon for your site
@@ -24,14 +35,16 @@ safari_pinned_tab = "/icons/safari-pinned-tab.svg"
 webmanifest = "/icons/site.webmanifest"
 
 [extra.author]
-name = "DeepThought"
+name = "lza"
 avatar = "/img/lza.jpg"
 
 [extra.social]
 email = "lance@lzahq.tech"
 github = "lalanza808"
 twitter = "lza_menace"
+
 [extra.analytics]
-# google = "<your_gtag>"
+google = "UA-60618938-4"
+
 [extra.commenting]
 # disqus = "<your_disqus_shortname>"
