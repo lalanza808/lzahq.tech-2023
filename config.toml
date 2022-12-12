@@ -1,0 +1,37 @@
+base_url = "https://lzahq.tech"
+compile_sass = false
+build_search_index = true
+theme = "DeepThought"
+[markdown]
+highlight_code = true
+[extra]
+navbar_items = [
+ { code = "en", nav_items = [
+  { url = "$BASE_URL/", name = "Home" },
+  { url = "$BASE_URL/posts", name = "Posts" },
+  { url = "$BASE_URL/docs", name = "Docs" },
+  { url = "$BASE_URL/tags", name = "Tags" },
+  { url = "$BASE_URL/categories", name = "Categories" },
+ ]},
+]
+
+# Add links to favicon, you can use https://realfavicongenerator.net/ to generate favicon for your site
+[extra.favicon]
+favicon_16x16 = "/icons/favicon-16x16.png"
+favicon_32x32 = "/icons/favicon-32x32.png"
+apple_touch_icon = "/icons/apple-touch-icon.png"
+safari_pinned_tab = "/icons/safari-pinned-tab.svg"
+webmanifest = "/icons/site.webmanifest"
+
+[extra.author]
+name = "DeepThought"
+avatar = "/img/lza.jpg"
+
+[extra.social]
+email = "lance@lzahq.tech"
+github = "lalanza808"
+twitter = "lza_menace"
+[extra.analytics]
+# google = "<your_gtag>"
+[extra.commenting]
+# disqus = "<your_disqus_shortname>"
