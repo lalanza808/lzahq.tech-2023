@@ -36,7 +36,7 @@ webmanifest = "/icons/site.webmanifest"
 
 [extra.author]
 name = "lza"
-avatar = "/img/lza.jpg"
+avatar = "/images/lza.jpg"
 
 [extra.social]
 email = "lance@lzahq.tech"
