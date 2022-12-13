@@ -28,15 +28,16 @@ navbar_items = [
 
 # Add links to favicon, you can use https://realfavicongenerator.net/ to generate favicon for your site
 [extra.favicon]
-favicon_16x16 = "/icons/favicon-16x16.png"
-favicon_32x32 = "/icons/favicon-32x32.png"
-apple_touch_icon = "/icons/apple-touch-icon.png"
-safari_pinned_tab = "/icons/safari-pinned-tab.svg"
-webmanifest = "/icons/site.webmanifest"
+favicon_16x16 = "/images/favicon-16x16.png"
+favicon_32x32 = "/images/favicon-32x32.png"
+apple_touch_icon = "/images/apple-touch-icon.png"
+safari_pinned_tab = "/images/safari-pinned-tab.svg"
+webmanifest = "/images/site.webmanifest"
 
 [extra.author]
 name = "lza"
-avatar = "/images/lza.jpg"
+avatar = "/images/shitbird.png"
+zavatar = "/images/lza.jpg"
 
 [extra.social]
 email = "lance@lzahq.tech"
