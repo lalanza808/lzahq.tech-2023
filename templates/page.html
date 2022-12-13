@@ -158,12 +158,19 @@
   }
 
   function activateIfVisible() {
+    let atBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
+    let l = tocItems.length;
     for (b = true, i = 0; i < tocItems.length; i++) {
       if (b && isVisible(i)) {
         tocItems[i].classList.add('is-active');
         b = false;
-      } else
+      } else if (atBottom) {
+        tocItems[tocItems.length - 1].classList.add('is-active');
+        tocItems[tocItems.length - 2].classList.remove('is-active');
+        b = false;
+      } else {
         tocItems[i].classList.remove('is-active');
+      }
     }
   }
 
@@ -177,22 +184,6 @@
       isTicking = true;
     }
   }, false);
-</script>
-{% endif %}
-
-{% if page.extra.comments and config.extra.commenting.disqus %}
-<script>
-  var disqus_config = function () {
-    this.page.url = "{{config.base_url | safe}}";
-    this.page.identifier = "{{ current_path | safe}}";
-  };
-
-  (function () {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://{{ config.extra.commenting.disqus | safe}}.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
 </script>
 {% endif %}
 {% endblock %}
