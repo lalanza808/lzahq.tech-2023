@@ -10,6 +10,7 @@ tags = ["wownero", "python", "rust", "docker", "web", "wallet", "memes"]
 I spent a couple years messing around with Wownero because Monero became too serious and intense for me.
 The focus in Monero circles was heavily based around cypherpunk ethos, escaping corporate surveillance, fighting the state apparatus, etc.
 It became too heavy for me, so when I discovered <a href="https://wownero.org" target="_blank">Wownero</a> I was eager to port over my tools and services there.
+
 The scene was light-hearted, fun, playful, and not really caring about much besides having a good time.
 The project itself was a joke that came to life with a community of like-minded people.
 We spent most of our time making jokes on IRC, shitposting on Twitter/Reddit, laughing at memes, listening to music together, and getting stoned.
