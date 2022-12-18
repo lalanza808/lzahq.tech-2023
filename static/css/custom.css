@@ -18,3 +18,7 @@
     overflow-wrap: anywhere;
 	user-select: all;
 }
+
+.button {
+    margin: 6px;
+}
