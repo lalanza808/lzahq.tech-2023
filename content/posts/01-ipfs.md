@@ -1,6 +1,7 @@
 +++
 title = "IPFS is okay I guess"
 date = 2022-12-12
+description = "It could be better I suppose"
 extra.toc = true
 
 [taxonomies]

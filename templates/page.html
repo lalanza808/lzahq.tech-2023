@@ -16,9 +16,11 @@
           <p class="has-text-grey">
             <time datetime="{{ page.date }}">{{ page.date | date(format='%B %d, %Y') }}</time>
           </p>
+          {% if not page.extra.project %}
           <p class="has-text-grey" style="font-size: 12px;">
             {{ macros::page_content_metadata(page=page) }}
           </p>
+          {% endif %}
           <div class="columns is-multiline is-gapless mt-2">
             <div class="column">
               {% if page.taxonomies.categories %}
